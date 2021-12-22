@@ -1,15 +1,14 @@
-.container{
-padding-top: 2rem;
+.container {
+    padding-top: 2rem;
 }
 
-h1{
+h1 {
     font-size: 48px;
 }
 
-
-.input-form{
+.input-form {
     margin: auto;
-    width:50%; 
+    width: 50%;
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -18,20 +17,20 @@ h1{
     align-content: center;
 }
 
-.search-field, .search-field:active{
-   
+.search-field,
+.search-field:active {
     height: 40px;
     text-indent: 20px;
     font-family: Arial, Helvetica, sans-serif;
     border: solid 1px rgb(222, 222, 222);
-   
+
     border-right: none;
     border-left: none;
 
     flex: 1.5;
 }
 
-.submit-btn{
+.submit-btn {
     flex: 0.1;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -39,10 +38,9 @@ h1{
     border-left: none;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
-
 }
 
-.btn2{
+.btn2 {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     flex: 0.1;

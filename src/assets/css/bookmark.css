@@ -1,9 +1,7 @@
-
-
-.bookmark-container{
+.bookmark-container {
     list-style: none;
     margin: auto;
-    width:50%; 
+    width: 50%;
     padding: 2rem;
     padding-top: 0;
     display: flex;
@@ -14,7 +12,7 @@
     flex-wrap: wrap;
 }
 
-.bookmark{
+.bookmark {
     padding: 20px !important;
     border: solid 1px grey;
     margin: 10px;
@@ -23,9 +21,9 @@
     text-decoration: none;
     color: rgb(104, 104, 104);
     background-color: rgb(213, 213, 213);
-   }
+}
 
-.bookmark-link{
+.bookmark-link {
     display: flex;
     flex-direction: column;
 }
@@ -36,11 +34,9 @@ p {
     margin-top: -5px;
     text-decoration: none;
     color: black;
-
 }
 
-a{
+a {
     text-decoration: none;
     margin: 0px 10px 0 10px;
-    
 }

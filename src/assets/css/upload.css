@@ -1,11 +1,10 @@
-.btn-container{
+.btn-container {
     margin-bottom: 2rem;
 }
-a{
-    color: white
+a {
+    color: white;
 }
-.image-upload{
-  
+.image-upload {
     border: solid 1px rgb(52, 72, 255);
     font-family: Arial, Helvetica, sans-serif;
 
@@ -18,6 +17,9 @@ a{
     padding-bottom: 2rem;
 }
 
-.image-upload:active, .image-upload:hover, a:hover, a:active{
-    color: white !important
+.image-upload:active,
+.image-upload:hover,
+a:hover,
+a:active {
+    color: white !important;
 }

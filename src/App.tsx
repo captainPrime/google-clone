@@ -1,22 +1,13 @@
-import {useState, useEffect} from 'react';
+import * as React from 'react';
+import SearchPage from './pages/SearchPage';
 import './App.css';
-import Bookmarks from './components/bookmarks';
-import Search from './components/search';
-import Example from './components/Modal';
-/* import {googleContextProvider} from './components/context/ReactContext.' */
 
-function App( ) {
-const [url , setUrl] = useState([])
-
-  return (
-   /*  <googleContextProvider> */
+function App() {
+    return (
         <div className="App">
-          <Search/>
-          <Bookmarks />
-          <Example />
+            <SearchPage />
         </div>
-   /*  </googleContextProvider> */
-  );
+    );
 }
 
 export default App;
