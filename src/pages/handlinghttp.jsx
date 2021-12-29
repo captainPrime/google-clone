@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
-import Services from '../services/https';
+import HttpService from '../services/https';
 
 function Handlinghttp() {
+
+    const services = new HttpService
     useEffect(() => {
-        Services.get('employee').then((res) => {
-            console.log('Employee Data', res);
+        services.get('posts').then(res => {
+            console.log('posts', res);
         });
-    }, [Services]);
+    }, [services]);
+
     return <div></div>;
 }
 
