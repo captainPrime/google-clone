@@ -67,3 +67,48 @@ function SearchPage() {
 }
 
 export default SearchPage;
+
+
+     // saving background url
+
+        /*  if(imageAsUrlUpload !== "") {
+      const createUrl = async( ) => {
+        try {
+            await addDoc(urlCollectionRef, {name: imageAsUrlUpload})
+        } catch (error) {
+            console.log(error)
+        }
+
+        
+    }
+
+    createUrl()
+
+  } 
+
+        //handles image upload to firebase
+        /*
+      if(!imageAsFile ) {
+        console.error(`not an image, the image file is a ${typeof(imageAsFile)}`)
+        alert("Please select a valid file")
+      } 
+  
+    const uploadTask = await storage.ref(`/images/${imageAsFile?.name}`).put(imageAsFile) 
+    
+    //initiates the firebase side uploading 
+    uploadTask.on('state_change', (snapShot:any) => {
+      //takes a snap shot of the process as it is happening
+      console.log(snapShot)
+    } , (err) => {
+      //catches the errors
+      console.log(err)
+    } , () => {
+    // gets the functions from storage refences the image storage in firebase by the children
+    // gets the download url then sets the image from firebase as the value for the imgUrl key:
+
+        storage.ref('images').child(imageAsFile.name).getDownloadURL()
+        .then(fireBaseUrl => {
+          setImageAsUrl(prevObject => ({...prevObject, imgUrl: fireBaseUrl}))
+        })
+
+    }) */
