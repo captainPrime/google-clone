@@ -10,8 +10,8 @@ type datatype = {
 const headers = {
     Accept: 'application/json',
     'Content-type': 'application/json',
-    
-}; 
+
+};
 
 function jionURL(baseURl: string, url: string) {
     return `${baseURl}/${url}`;
@@ -28,9 +28,9 @@ export default class HttpService {
             method,
         };
 
-       if (data) {
-            data = JSON.stringify({ ...data});
-        }  
+        if (data) {
+            data = JSON.stringify({ ...data });
+        }
 
         return fetch(url, options);
     }
@@ -118,6 +118,3 @@ export default class HttpService {
     }
 }
  */
-
-
-
