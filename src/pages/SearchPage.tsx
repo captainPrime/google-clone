@@ -23,7 +23,7 @@ function SearchPage() {
 
     //--------------------------------------
     useEffect(() => {
-        const getUrl = async () => { 
+        const getUrl = async () => {
             const data = await getDocument('url');
             setBookmarks(
                 data.docs.map((doc) => ({ name: doc.data().name, id: doc.id })),
@@ -39,18 +39,18 @@ function SearchPage() {
         setSearchValue(e.target.value);
     };
 
-     const CreateUrlFnc = () => {
-          const createUrl = async () => {
-              try {
-                  await createDocument('url', { name: searchValue});
-                  window.open(`https://${searchValue}`);
-              } catch (error) {
-                  console.log(error);
-              }
-          };
-  
-          createUrl();
-      }; 
+    const CreateUrlFnc = () => {
+        const createUrl = async () => {
+            try {
+                await createDocument('url', { name: searchValue });
+                window.open(`https://${searchValue}`);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        createUrl();
+    };
 
     return (
         <div>
@@ -58,7 +58,7 @@ function SearchPage() {
             <Search
                 CreateUrlFnc={CreateUrlFnc}
                 handlechange={handlechangeFn}
-            /> 
+            />
             <Bookmarks bookmarks={bookmarkFromStore} />
         </div>
     );
