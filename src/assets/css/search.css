@@ -15,18 +15,19 @@ h1 {
     flex-direction: row;
     text-align: center;
     align-content: center;
+    
 }
 
-.search-field,
-.search-field:active {
-    height: 40px;
+.search-field
+ {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    height: 50px;
     text-indent: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:arial, sans-serif;
     border: solid 1px rgb(222, 222, 222);
-
     border-right: none;
     border-left: none;
-
+ 
     flex: 1.5;
 }
 
@@ -38,7 +39,10 @@ h1 {
     border-left: none;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
+
+
 
 .btn2 {
     border-top-right-radius: 0px;
@@ -50,4 +54,9 @@ h1 {
     border-right: none;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(210, 210, 210);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.submit-btn:focus, .btn2:focus, .search-field:focus{
+    border: solid 0px rgb(222, 222, 222) !important;
 }

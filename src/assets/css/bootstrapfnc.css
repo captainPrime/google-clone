@@ -1,0 +1,9 @@
+.delete-section Button {
+    margin: 10px;
+}
+
+.ellipses {
+    cursor: 'pointer';
+    float: 'right';
+    margin: '10px 2px 10px 2px';
+}

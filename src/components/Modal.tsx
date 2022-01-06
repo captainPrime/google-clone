@@ -1,12 +1,12 @@
 import { useEffect, useState, useContext } from 'react';
-import { Button, Modal } from 'react-bootstrap';
-
+import Button from 'react-bootstrap/button';
+import { Modal } from 'react-bootstrap'
 import { FaPen } from 'react-icons/fa';
-import './assets/upload.css';
-import './assets/uploadsection.css';
+import '../assets/css/upload.css';
+/* import './assets/uploadsection.css'; */
 import { FaImage } from 'react-icons/fa';
 
-function Example() {
+function BGModal() {
     interface ImageFiles {
         name: string;
     }
@@ -16,15 +16,11 @@ function Example() {
     const [imageAsUrl, setImageAsUrl] = useState(allInputs);
 
     console.log(imageAsFile);
-
     const handleImageAsFile = (e: any) => {
         const image = e.target.files[0];
         setImageAsFile((imageFile) => image);
     };
-
     const [show, setShow] = useState(false);
-
-    ///======================================================
     const handleClose = async () => {
         setShow(false);
     };
@@ -36,7 +32,7 @@ function Example() {
             <div className="btn-container" onClick={handleShow}>
                 <form className="container">
                     <Button className="image-upload">
-                        <FaPen style={{ color: 'rgb(52, 72, 255)' }} /> &nbsp;
+                        <FaPen style={{ color: 'white' }} /> &nbsp;
                         customise background
                     </Button>
                 </form>
@@ -64,11 +60,6 @@ function Example() {
                                     </div>
                                     <p className="file-return"></p>
                                 </form>
-                                <input
-                                    className="input-url"
-                                    placeholder="enter image url"
-                                    type="text"
-                                />
                             </div>
                         </div>
                     </div>
@@ -86,4 +77,4 @@ function Example() {
     );
 }
 
-export default Example;
+export default BGModal;

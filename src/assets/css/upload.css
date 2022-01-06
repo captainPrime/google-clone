@@ -1,6 +1,11 @@
 .btn-container {
     margin-bottom: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
+/* 
 a {
     color: white;
 }
@@ -23,3 +28,4 @@ a:hover,
 a:active {
     color: white !important;
 }
+ */
